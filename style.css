@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(1) brightness(0.7);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+nav {
+    width: 80vw;
+    /* background: forestgreen; */
+    height: 80px;
+    margin: auto;
+    display: flex;
+    top: 0px;
+    opacity: 1;
+
+}
+
+.nav-left img {
+    width: 150px;
+    height: 50px;
+}
+
+.nav-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-right button {
+    height: 30px;
+    width: 70px;
+    font-weight: 700;
+    padding: 3px 3px;
+}
+
+.transparant {
+    background: rgba(92, 86, 86, 0.527);
+    color: white;
+    border-radius: 6px;
+    border: 1px solid #998585;
+}
+
+.btn-red {
+    background: #e50914;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid #e50914;
+}
+
+.first {
+    color: wheat;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.second {
+    color: wheat;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.third {
+    color: wheat;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 2%;
+}
+
+main div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.btn {
+    font-size: 25px;
+    margin-left: 10px;
+    padding: 0px 20px;
+} 
+
+.saparation {
+    width: 100vw;
+    height: 5px;
+    background-color: gray;
+}
+
+.container {
+    width: 80vw;
+    margin: 20px auto;
+
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.card-1 img {
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 1s linear;
+}
+
+.card-2 {
+    border-radius: 10px;
+    width: 250px;
+    min-height: 300px;
+    background-color: #1e172b;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-2 > h2, .card-2 > p {
+    margin-top: 10px;
+}
+
+.d {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    margin-top: 10px;
+}
+
+.cont {
+    width: 100%;
+    height: 90px;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+}
+
+.cont h2 {
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+
+
+.card-1 img:hover {
+    animation: Card-Animation 0.5s linear 0ms 1;
+    animation-play-state: paused;
+}
+
+.cont:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+@keyframes Card-Animation {
+    0% {
+        width: 200px;
+    }
+
+    100% {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    nav {
+        width: 90vw;
+    }
+
+    .btn {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .nav-right {
+        width: 40%;
+    }
+
+    .nav-right {
+        width: 60%;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    .first {
+        font-size: 27px;
+        margin-top: 100px;
+    }
+
+    .second {
+        font-size: 20px;
+    }
+
+    header > main > div > input {
+        width: 250px;
+    }
+}
