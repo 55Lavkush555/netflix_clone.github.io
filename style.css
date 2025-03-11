@@ -211,7 +211,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 875px) {
     nav {
         width: 90vw;
     }
